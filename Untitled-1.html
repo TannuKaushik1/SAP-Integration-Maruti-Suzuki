@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rolling DI Generation</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+        .header {
+            background-color: #014881;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+        .header img {
+            width: 100px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        .header .title {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .header .subtitle {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        .header .user-info {
+            font-size: 14px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            text-align: right;
+        }
+        .container {
+            margin: 20px;
+            text-align: center;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-group select,
+        .form-group input {
+            padding: 8px;
+            width: 150px;
+        }
+        .section {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .section h2 {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .section p {
+            padding: 10px;
+            margin: 0;
+        }
+        .footer {
+            background-color: #014881;
+            padding: 10px;
+            color: white;
+            text-align: right;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .inquiry-btn {
+            background-color: #0099ff;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .inquiry-btn:hover {
+            background-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="index.html.png" alt="Maruti Suzuki Logo">
+        <div class="title">Rolling DI Generation</div>
+        <div class="subtitle">Shop Sequence Summary Report</div>
+        <div class="user-info">User: 999999<br>Date: 16-Aug-2024</div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-group">
+                <label for="company">Company*</label>
+                <select id="company">
+                    <option>--Select--</option>
+                    <option>Maruti Suzuki</option>
+                    <option>Toyota</option>
+                    <option>Honda</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="shop">Shop*</label>
+                <select id="shop">
+                    <option>--Select--</option>
+                    <option>Shop A</option>
+                    <option>Shop B</option>
+                    <option>Shop C</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="run-date">DI Run Date</label>
+                <input id="run-date" placeholder="DD-MMM-YYYY" value="15-Sep-2024">
+            </div>
+            <div class="form-group">
+                <label for="model">Model</label>
+                <input id="model" value="Model X">
+            </div>
+            <div class="form-group">
+                <label for="path">Path</label>
+                <input id="path" value="/reports/2024/September/">
+            </div>
+            <div class="form-group">
+                <label for="summary-by">Summary By</label>
+                <select id="summary-by">
+                    <option>--Select--</option>
+                    <option>Department</option>
+                    <option>Region</option>
+                    <option>Model</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- New Sections for Additional Data -->
+        <div class="section">
+            <h2>Recent Activities</h2>
+            <p><strong>Activity 1:</strong> Completed DI run for Shop A on 15-Sep-2024. Data verified and uploaded.</p>
+            <p><strong>Activity 2:</strong> Scheduled DI run for Shop B on 20-Sep-2024. Awaiting confirmation.</p>
+            <p><strong>Activity 3:</strong> In Progress - Data collection for Model X is ongoing.</p>
+        </div>
+
+        <div class="section">
+            <h2>Status Updates</h2>
+            <p><strong>DI Status:</strong> All DI runs are on schedule. No delays reported.</p>
+            <p><strong>Model Updates:</strong> New models for Q4 2024 have been added. Updates to be included in the next report.</p>
+            <p><strong>Path Status:</strong> All data paths are correctly configured. No issues detected.</p>
+        </div>
+
+        <div class="section">
+            <h2>Report Details</h2>
+            <p><strong>Total Reports Generated:</strong> 150 reports generated in the current quarter.</p>
+            <p><strong>Reports Pending:</strong> 15 reports are pending for final review.</p>
+            <p><strong>Reports Completed:</strong> 135 reports have been reviewed and finalized.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <button class="inquiry-btn">Inquiry</button>
+    </div>
+</body>
+</html>

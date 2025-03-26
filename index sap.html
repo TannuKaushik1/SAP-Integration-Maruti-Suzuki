@@ -1,0 +1,189 @@
+<html>
+<head>
+    <title>Rolling DI Generation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            flex-grow: 1;
+            background-color: white;
+            padding: 20px;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header .user-info {
+            font-size: 14px;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .form-container table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .form-container table, .form-container th, .form-container td {
+            border: 1px solid #ccc;
+        }
+        .form-container th, .form-container td {
+            padding: 10px;
+            text-align: left;
+        }
+        .form-container th {
+            background-color: #f2f2f2;
+        }
+        .form-container input[type="text"], .form-container select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .form-container .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-container .button-container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer .time {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Masters</h2>
+            <ul>
+                <li><a href="#">Day Wise - Production Plan</a></li>
+                <li><a href="#">Exceptional Model Master</a></li>
+                <li><a href="#">WIP Days</a></li>
+                <li><a href="#">Path Mapping Master</a></li>
+            </ul>
+            <h2>Transaction</h2>
+            <ul>
+                <li><a href="#">Vehicle - Exceptional Model</a></li>
+                <li><a href="#">Engine - Exceptional Model</a></li>
+                <li><a href="#">WIP Exceptional Vehicles</a></li>
+                <li><a href="#">Body Flow Generation</a></li>
+            </ul>
+            <h2>Report</h2>
+            <ul>
+                <li><a href="#">Shop Sequence Summary</a></li>
+                <li><a href="#">Shop Sequence Detail</a></li>
+                <li><a href="#">Engine Plan Report</a></li>
+                <li><a href="#">Day Wise Production Plan</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <h1>Rolling DI Generation</h1>
+                <div class="user-info">
+                    User : 999999<br>
+                    Date : 16-Aug-2024
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Shop Sequence Summary Report</h2>
+                <table>
+                    <tr>
+                        <th>Company*</th>
+                        <th>Shop*</th>
+                        <th>DI Run Date*</th>
+                        <th>Model</th>
+                        <th>Path</th>
+                        <th>Summary By*</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select>
+                                <option>-Select-</option>
+                                <option>Company A</option>
+                                <option>Company B</option>
+                                <option>Company C</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>-Select-</option>
+                                <option>Shop 1</option>
+                                <option>Shop 2</option>
+                                <option>Shop 3</option>
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="DD-MMM-YYYY"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td>
+                            <select>
+                                <option>-Select-</option>
+                                <option>Summary 1</option>
+                                <option>Summary 2</option>
+                                <option>Summary 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="button-container">
+                    <button>Inquiry</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="time">10:26:51</div>
+                <div>&copy; Copyright 2024 - Maruti Suzuki India Limited</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

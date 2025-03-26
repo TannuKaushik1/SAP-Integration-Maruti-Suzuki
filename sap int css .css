@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0a68c2;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar-menu li.divider {
+    border-top: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.main-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #1e3a57;
+    color: #fff;
+    font-size: 14px;
+}
+
+.content h2 {
+    color: #1e3a57;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.form label {
+    color: #333;
+    font-size: 14px;
+}
+
+.form input,
+.form select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-group {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.inquiry-button {
+    background-color: #0a68c2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.inquiry-button:hover {
+    background-color: #084a8a;
+}
